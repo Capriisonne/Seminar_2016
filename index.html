@@ -26,6 +26,16 @@
   console.log(response);
 });
   };
+    
+    /* make the API call */
+FB.api(
+    "/es.muellert.wieder",
+    function (response) {
+      if (response && !response.error) {
+        /* handle the result */
+      }
+    }
+);
 
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
