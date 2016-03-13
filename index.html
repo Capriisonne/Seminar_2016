@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    setTimeout(function(){
+   
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '1029051753826790',
@@ -22,10 +22,10 @@
      js.src = "//connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
-          }, 3000);
-    </script>
-        <script>
-    FB.ui({
+          }
+    
+    $(document).ready(function(){
+            FB.ui({
   method: 'share_open_graph',
   action_type: 'og.likes',
   action_properties: JSON.stringify({
@@ -35,6 +35,8 @@
   // Debug response (optional)
   console.log(response);
 });
+    })
+
       
     </script>
 </body>
